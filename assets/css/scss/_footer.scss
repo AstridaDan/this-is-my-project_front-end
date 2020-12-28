@@ -1,0 +1,153 @@
+// *** FOOTER ***///
+footer {
+  position: absolute;
+  top: 3250px;
+  width: 100%;
+  min-height: 410px;
+  left: 0;
+  right: 0;
+  background: #2f4858;
+  color: #ffffff;
+  .footer-vector {
+    width: 100%;
+    height: auto;
+    top: 51.66px;
+    background: #ffcb66;
+  }
+  ul {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    list-style-type: none;
+    li a {
+      color: #ffffff;
+      &:hover {
+        color: #ffffff96;
+        text-decoration: none;
+        transition: 0.1s;
+      }
+    }
+  }
+  //First column
+  .first-col {
+    align-content: center;
+    .golden-logo {
+      max-width: 182px;
+      min-width: 82px;
+      height: auto;
+    }
+    p {
+      margin-top: 70px;
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+  //Second column
+  .second-col {
+    li {
+      margin-bottom: 21px;
+    }
+  }
+  //Third column
+  .third-col {
+    margin-left: -40px;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  //Fourth column
+  .fourth-col {
+    text-align: right;
+    margin-right: 68px;
+    h3 {
+      margin-bottom: 22px;
+      font-size: 24px;
+    }
+    li {
+      margin-bottom: 11px;
+      font-size: 14px;
+    }
+    .soc-logo {
+      margin-top: 52px;
+      margin-bottom: 51px;
+      img {
+        margin-left: 29px;
+        margin-bottom: 10px;
+      }
+    }
+    .policy {
+      font-size: 14px;
+    }
+  }
+  .row {
+    margin-left: 62px;
+  }
+}
+@media (min-width: 1450px) {
+  footer {
+    top: 3500px;
+  }
+}
+@media (max-width: 830px) {
+  .first-col {
+    margin-left: -30%;
+  }
+  #footer li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 770px) {
+  footer {
+    top: 6150px;
+  }
+  .golden-logo {
+    width: 140px;
+  }
+  .second-col {
+    li {
+      margin-left: -30px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  footer {
+    top: 5320px;
+    .col-3 {
+      margin-left: 5%;
+      margin-right: 13%;
+    }
+    .first-col {
+      .golden-logo {
+        width: 100px;
+      }
+      p {
+        margin-top: 80px;
+        font-size: 11px;
+        margin-left: -10px;
+      }
+    }
+    .second-col {
+      margin-left: 38%;
+      margin-right: -30%;
+    }
+    .fourth-col {
+      margin-right: -83%;
+      text-align: left;
+    }
+  }
+}
+@media (max-width: 485px) {
+  footer {
+    top: 4700px;
+  }
+}
+@media (max-width: 350px) {
+  footer {
+    top: 4050px;
+  }
+}

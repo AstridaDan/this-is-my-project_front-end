@@ -1,0 +1,134 @@
+@mixin input-style {
+  background: rgba(196, 196, 196, 0.4);
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 14px;
+  //PLACEHOLDER
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #2f4858;
+}
+//*** FORM ***//
+form {
+  position: absolute;
+  top: 2010px;
+  max-width: 627px;
+  padding: 3px;
+  text-align: center;
+  h3 {
+    margin-bottom: 55px;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #2f4858;
+  }
+  .form-group {
+    input {
+      @include input-style();
+      height: 43px;
+    }
+  }
+  textarea {
+    @include input-style();
+    height: 232px;
+    resize: none;
+  }
+  .form-comm {
+    @include text();
+    float: left;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .form-check {
+    position: absolute;
+    margin-top: 25px;
+    float: left;
+    input[type="checkbox"] {
+      cursor: pointer;
+    }
+    input[type="checkbox"]:before {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      display: block;
+      content: "";
+      background: #e7e7e7;
+      border-radius: 3px;
+    }
+    input[type="checkbox"]:checked:after {
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      width: 4px;
+      height: 9px;
+      display: block;
+      content: "";
+      border: solid #2f4858;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    .form-check-label {
+      margin-left: 21px;
+      @include text();
+      font-size: 14px;
+      line-height: 17px;
+      font-family: "Montserrat";
+      text-align: left;
+    }
+  }
+}
+.submit-btn {
+  margin-top: 50px;
+  width: 181px;
+  height: 62px;
+  background: #c4c4c4;
+  border: none;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 1450px) {
+  form {
+    top: 2200px;
+  }
+}
+@media (max-width: 770px) {
+  form {
+    top: 4700px;
+  }
+}
+@media (max-width: 600px) {
+  form {
+    top: 3870px;
+  }
+}
+@media (max-width: 485px) {
+  form {
+    top: 3400px;
+  }
+}
+@media (max-width: 350px) {
+  form {
+    top: 2750px;
+  }
+}
