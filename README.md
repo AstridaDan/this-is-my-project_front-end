@@ -8,4 +8,4 @@ To start a program you can simply clone all respiratory files and project result
 The simplest way to edit the project with SASS - you need to move the style.css file to folder resource -> SCSS and change the CSS location in an HTML link tag.
 
 Link to GitHub Pages:
-https://sparkleheart.org/?fbclid=IwAR0oZnkd5U_AC212k_ncr9Sleav2nruw6-pHcVcCFv_oSQL6nKLMPQyfhOI
+https://astridadan.github.io/this-is-my-project_front-end/
