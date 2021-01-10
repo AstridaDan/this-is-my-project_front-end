@@ -3,7 +3,6 @@
   border-radius: 6px;
   border: none;
   width: 100%;
-  margin-right: 20px;
   margin-bottom: 15px;
   padding-top: 13px;
   padding-bottom: 10px;
@@ -44,12 +43,19 @@ form {
     input {
       @include input-style();
       height: 43px;
+
+      @media (max-width: 355px) {
+        font-size: 13px;
+      }
     }
   }
   textarea {
     @include input-style();
     height: 232px;
     resize: none;
+    @media (max-width: 355px) {
+      font-size: 13px;
+    }
   }
   .form-comm {
     @include text();
@@ -57,11 +63,17 @@ form {
     font-family: "Montserrat";
     font-size: 14px;
     line-height: 17px;
+    @media (max-width: 620px) {
+      margin-left: 10px;
+    }
   }
   .form-check {
     position: absolute;
     margin-top: 25px;
     float: left;
+    @media (max-width: 620px) {
+      margin-left: 10px;
+    }
     input[type="checkbox"] {
       cursor: pointer;
     }
@@ -102,7 +114,7 @@ form {
   margin-top: 50px;
   width: 181px;
   height: 62px;
-  background: #c4c4c4;
+  background: #ffcb66;
   border: none;
   border-radius: 30px;
   color: #ffffff;
@@ -112,6 +124,10 @@ form {
   line-height: 29px;
   text-align: center;
   cursor: pointer;
+  &:hover {
+    background: #ffcc66b7;
+    transition: 0.8s;
+  }
 }
 @media (min-width: 1450px) {
   form {
@@ -125,12 +141,17 @@ form {
 }
 @media (max-width: 600px) {
   form {
-    top: 3870px;
+    top: 4000px;
+  }
+}
+@media (max-width: 520px) {
+  form {
+    top: 3850px;
   }
 }
 @media (max-width: 485px) {
   form {
-    top: 3400px;
+    top: 3500px;
   }
 }
 @media (max-width: 350px) {

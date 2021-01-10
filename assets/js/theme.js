@@ -29,7 +29,17 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-  function getRectTop(el){
-    var rect = el.getBoundingClientRect();
-    return rect.top;
+function getRectTop(el){
+  var rect = el.getBoundingClientRect();
+  return rect.top;
+}
+
+//NAVIGATION HAMBURGER
+function navFunction() {
+  var nav = document.getElementById("nav-mob");
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+  } else {
+    nav.style.display = "block";
   }
+}

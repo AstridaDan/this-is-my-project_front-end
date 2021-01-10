@@ -3,11 +3,12 @@ footer {
   position: absolute;
   top: 3250px;
   width: 100%;
-  min-height: 410px;
+  min-height: 310px;
   left: 0;
   right: 0;
   background: #2f4858;
   color: #ffffff;
+  border: none;
   .footer-vector {
     width: 100%;
     height: auto;
@@ -34,36 +35,121 @@ footer {
     align-content: center;
     .golden-logo {
       max-width: 182px;
-      min-width: 82px;
+      min-width: 40px;
       height: auto;
+      @media (max-width: 1140px) {
+        margin-left: -30px;
+        max-width: 130px;
+      }
+      @media (max-width: 770px) {
+        width: 100px;
+      }
+      @media (max-width: 490px) {
+        width: 80px;
+        margin-top: 230px;
+      }
+      @media (max-width: 390px) {
+        margin-top: 200px;
+        margin-bottom: 80px;
+      }
+      @media (max-width: 350px) {
+        width: 60px;
+      }
     }
     p {
-      margin-top: 70px;
+      margin-top: 90px;
       font-size: 14px;
       text-align: left;
+      @media (max-width: 1140px) {
+        margin-left: -30px;
+        margin-top: 160px;
+      }
+      @media (max-width: 680px) {
+        margin-top: 80px;
+        font-size: 11px;
+        margin-left: -40px;
+        margin-right: -30px;
+      }
     }
   }
   //Second column
   .second-col {
     li {
       margin-bottom: 21px;
+      @media (max-width: 1140px) {
+        margin-left: -50px;
+      }
+      @media (max-width: 960px) {
+        margin-left: -90px;
+      }
+      @media (max-width: 800px) {
+        margin-left: -70px;
+      }
+    }
+    @media (max-width: 680px) {
+      margin-left: -40%;
+    }
+    @media (max-width: 490px) {
+      margin-left: -200%;
+      margin-top: 20px;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    @media (max-width: 390px) {
+      margin-left: -230%;
     }
   }
   //Third column
   .third-col {
     margin-left: -40px;
+    margin-right: 80%;
+    @media (max-width: 1140px) {
+      margin-left: -100px;
+    }
     h3 {
       font-size: 24px;
       margin-bottom: 22px;
     }
     li {
       margin-bottom: 10px;
+      margin-right: -120%;
+      @media (max-width: 800px) {
+        padding-left: 20px;
+      }
+      @media (max-width: 950px) {
+        margin-left: -50px;
+      }
+    }
+    @media (max-width: 680px) {
+      margin-left: 270%;
+      margin-top: -250px;
+      width: 100%;
+    }
+    @media (max-width: 490px) {
+      margin-left: 200%;
+      margin-top: -430px;
+    }
+    @media (max-width: 390px) {
+      margin-left: 210%;
+      margin-top: -470px;
+    }
+    @media (max-width: 350px) {
+      margin-left: 260%;
     }
   }
+
   //Fourth column
   .fourth-col {
     text-align: right;
     margin-right: 68px;
+    margin-left: -60px;
+    @media (max-width: 1180px) {
+      margin-right: 40px;
+    }
+    @media (max-width: 710px) {
+      margin-right: 15px;
+    }
     h3 {
       margin-bottom: 22px;
       font-size: 24px;
@@ -83,71 +169,144 @@ footer {
     .policy {
       font-size: 14px;
     }
+    @media (max-width: 680px) {
+      margin-right: -100%;
+      margin-left: 45%;
+      text-align: left;
+      .soc-logo {
+        margin-left: -190px;
+        img {
+          margin-top: -170px;
+          width: 25px;
+        }
+        .fb-logo {
+          height: 30px;
+          width: auto;
+        }
+      }
+      .policy {
+        p {
+          font-size: 11px;
+          margin-left: -200%;
+          margin-top: -145px;
+        }
+      }
+    }
+    @media (max-width: 570px) {
+      .soc-logo {
+        margin-left: 60px;
+        img {
+          margin-top: -180px;
+          margin-bottom: 50px;
+        }
+        .fb-logo {
+          margin-bottom: 120px;
+        }
+      }
+      .fourth-txt {
+        margin-left: -100%;
+      }
+      .policy {
+        p {
+          margin-left: -210%;
+          margin-top: -155px;
+        }
+      }
+    }
+    @media (max-width: 490px) {
+      margin-top: -250px;
+      .soc-logo {
+        margin-top: 150px;
+        margin-left: 0;
+        img {
+          margin-top: -180px;
+          margin-bottom: 50px;
+        }
+        .fb-logo {
+          margin-left: -10px;
+          margin-top: -110px;
+        }
+      }
+      .fourth-txt {
+        margin-left: -75%;
+      }
+      .policy {
+        p {
+          margin-left: -20px;
+          margin-top: -140px;
+        }
+      }
+    }
+    @media (max-width: 390px) {
+      margin-top: -270px;
+      .fourth-txt {
+        margin-left: -110%;
+      }
+    }
+    @media (max-width: 350px) {
+      margin-top: -270px;
+      .fourth-txt {
+        margin-left: -160%;
+      }
+      .soc-logo {
+        margin-top: 125px;
+      }
+      .policy {
+        p {
+          margin-left: -40px;
+          margin-top: -140px;
+        }
+      }
+    }
   }
+
   .row {
     margin-left: 62px;
   }
-}
-@media (min-width: 1450px) {
-  footer {
+  @media (min-width: 1450px) {
     top: 3500px;
   }
+  @media (max-width: 767px) {
+    top: 6230px;
+  }
+  @media (max-width: 680px) {
+    height: 490px;
+  }
+  @media (max-width: 600px) {
+    top: 5400px;
+  }
+  @media (max-width: 490px) {
+    height: 570px;
+  }
+  @media (max-width: 485px) {
+    top: 4840px;
+  }
+  @media (max-width: 350px) {
+    top: 4050px;
+  }
 }
-@media (max-width: 830px) {
+
+@media (max-width: 870px) {
   .first-col {
-    margin-left: -30%;
+    margin-left: -15%;
   }
   #footer li {
     font-size: 12px;
   }
-}
-@media (max-width: 770px) {
-  footer {
-    top: 6150px;
-  }
-  .golden-logo {
-    width: 140px;
-  }
-  .second-col {
-    li {
-      margin-left: -30px;
-    }
+  #footer h3 {
+    font-size: 18px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   footer {
-    top: 5320px;
     .col-3 {
       margin-left: 5%;
       margin-right: 13%;
     }
-    .first-col {
-      .golden-logo {
-        width: 100px;
-      }
-      p {
-        margin-top: 80px;
-        font-size: 11px;
-        margin-left: -10px;
-      }
-    }
-    .second-col {
-      margin-left: 38%;
-      margin-right: -30%;
-    }
-    .fourth-col {
-      margin-right: -83%;
-      text-align: left;
-    }
   }
 }
-@media (max-width: 485px) {
-  footer {
-    top: 4700px;
-  }
-}
-@media (max-width: 350px) {
-  footer {
-    top: 4050px;
+@media (max-width: 530px) {
+  .footer-vector {
+    margin-top: -30px;
   }
 }

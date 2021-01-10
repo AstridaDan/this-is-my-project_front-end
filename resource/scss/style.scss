@@ -24,16 +24,30 @@ body {
     z-index: -1;
   }
   .video-btn {
-    max-width: 86px;
+    width: 86px;
     margin-top: 20%;
     margin-left: 50%;
   }
 }
 @media (max-width: 600px) {
   .video-btn {
-    width: 26px;
+    max-width: 76px;
     left: -5%;
     top: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .video-btn {
+    max-width: 66px;
+    left: -5%;
+    top: 60%;
+  }
+}
+@media (max-width: 330px) {
+  .video-btn {
+    max-width: 56px;
+    left: -5%;
+    top: 60%;
   }
 }
 //*** INTRODUCTION TEXT ***//
@@ -50,22 +64,29 @@ body {
   line-height: 22px;
   text-align: center;
   transition: all 0.5s;
-}
-@media (min-width: 1450px) {
-  .about {
+  @media (min-width: 1450px) {
     top: 1100px;
   }
-}
-@media (max-width: 830px) {
-  .about {
+  @media (max-width: 830px) {
     top: 750px;
   }
-}
-@media (max-width: 600px) {
-  .about {
+  @media (max-width: 700px) {
+    padding: 30px;
+  }
+  @media (max-width: 600px) {
     top: 450px;
   }
+  @media (max-width: 510px) {
+    top: 390px;
+  }
+  @media (max-width: 480px) {
+    top: 380px;
+  }
+  @media (max-width: 370px) {
+    top: 300px;
+  }
 }
+
 //*** PHOTO LINE ***//
 .img-line {
   .row {
@@ -73,9 +94,19 @@ body {
     min-width: 100%;
     top: 1202px;
     margin-right: 97%;
+    @media (min-width: 1450px) {
+      top: 1300px;
+    }
+    @media (max-width: 600px) {
+      top: 700px;
+    }
     img {
       width: 119%;
       height: auto;
+      @media (max-width: 770px) {
+        max-height: 770px;
+        max-width: 760px;
+      }
     }
     .vector {
       position: absolute;
@@ -88,9 +119,27 @@ body {
     }
     .second {
       margin-top: 25%;
+      @media (min-width: 1450px) {
+        top: 5%;
+      }
+      @media (max-width: 770px) {
+        top: 93.8%;
+      }
+      @media (max-width: 690px) {
+        top: 93.8%;
+      }
+      @media (max-width: 667px) {
+        top: 94%;
+      }
+      @media (max-width: 632px) {
+        top: 94.2%;
+      }
     }
     .img-3 {
       width: 89%;
+      @media (max-width: 690px) {
+        width: 100%;
+      }
     }
     .img-4 {
       width: 116%;
@@ -98,39 +147,51 @@ body {
     }
   }
 }
-@media (min-width: 1450px) {
-  .img-line {
-    .row {
-      top: 1300px;
-    }
-    .second {
-      top: 5%;
-    }
-  }
-}
-@media (max-width: 770px) {
-  .img-line {
-    img {
-      max-height: 770px;
-      max-width: 760px;
-    }
-    .second {
-      top: 94%;
-    }
-  }
-}
-@media (max-width: 600px) {
-  .img-line {
-    .row {
-      top: 700px;
-    }
-  }
-}
+
 //*** QUESTIONS AND BUTTONS ***//
 .questions {
   position: absolute;
   width: 97%;
   top: 1731px;
+  @media (min-width: 1450px) {
+    top: 2000px;
+  }
+  @media (max-width: 767px) {
+    top: 4450px;
+  }
+  @media (max-width: 600px) {
+    top: 3750px;
+  }
+  @media (max-width: 550px) {
+    top: 3670px;
+  }
+  @media (max-width: 520px) {
+    top: 3550px;
+  }
+  @media (max-width: 517px) {
+    top: 3500px;
+  }
+  @media (max-width: 500px) {
+    top: 3450px;
+  }
+  @media (max-width: 485px) {
+    top: 3200px;
+  }
+  @media (max-width: 463px) {
+    top: 3100px;
+  }
+  @media (max-width: 425px) {
+    top: 3000px;
+  }
+  @media (max-width: 380px) {
+    top: 2900px;
+  }
+  @media (max-width: 350px) {
+    top: 2450px;
+  }
+  @media (max-width: 330px) {
+    top: 2350px;
+  }
   .row {
     .col {
       text-align: center;
@@ -142,45 +203,50 @@ body {
       font-size: 24px;
       line-height: 36px;
       color: #2f4858;
+      @media (max-width: 475px) {
+        padding: 3px;
+      }
     }
     button {
       width: 209.8px;
       height: 50px;
       top: 1810px;
       color: #ffffff;
-      background: #c4c4c4;
+      background: #ffcb66;
       font-family: "Montserrat";
       font-size: 18px;
       line-height: 22px;
       border: none;
       border-radius: 25.17px;
       cursor: pointer;
+      &:hover {
+        background: #ffcc66af;
+        transition: 0.8s;
+        border-bottom: 3px solid #ffa800;
+      }
     }
   }
 }
-@media (min-width: 1450px) {
-  .questions {
-    top: 2000px;
+
+@media (max-width: 841px) {
+  .dream-btn {
+    margin-top: 35px;
   }
 }
-@media (max-width: 770px) {
-  .questions {
-    top: 4450px;
+@media (max-width: 618px) {
+  .dream-btn {
+    margin-top: 0;
   }
 }
-@media (max-width: 600px) {
-  .questions {
-    top: 3620px;
+@media (max-width: 494px) {
+  .dream-btn {
+    margin-top: 35px;
   }
 }
-@media (max-width: 485px) {
-  .questions {
-    top: 3050px;
-  }
-}
-@media (max-width: 350px) {
-  .questions {
-    top: 2400px;
+@media (max-width: 463px) {
+  .dream-btn {
+    margin-top: 0;
+    margin-bottom: 35px;
   }
 }
 

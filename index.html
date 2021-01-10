@@ -4,7 +4,7 @@
   <meta charset="utf-8">
 	<title>Sparkle Heart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./resource/scss/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -17,13 +17,14 @@
 <body>
 <!-- NAVIGATION -->
 <nav class="nav">
-  <input type="checkbox" id="check">
-		<label for="check" class="checkbtn">
-			<i class="fa fa-bars"></i>
-		</label>
+  <!--Hamburger navigation-->
+  <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
   <div class="nav-bar">
     <img class="logo" src="./assets/img/BlackLogo 3.jpg" alt="logo">
-    <div class= "nav-text">
+    <div class= "nav-text" id="nav-mob">
       <a href="#">Ideja</a>
 	    <a href="#">Piesaki Sapni</a>
 		  <a href="#">Uzņēmējiem</a>
@@ -84,7 +85,7 @@
       <h1>
         VĒLIES PIEPILDĪT SAVU SAPNI?
       </h1>
-      <button>Sapņotājiem</button>
+      <button class="dream-btn">Sapņotājiem</button>
     </div>
     <div class="col">
       <h1>
@@ -195,14 +196,14 @@
     </ul>
     <ul class="col-3">
       <div class="fourth-col">
-		    <li>
-          <h3>Juris Gogulis</h3>
-        </li>
-        <li>
-          <a href="#">juris.gogulis@sparkleheart.org</a>
-        </li>
-        <li>+37126890034</li>
-        <li>Biķernieku iela 24a - 5, LV-1006</li>
+        <div class="fourth-txt">
+          <li>
+            <h3>Juris Gogulis</h3>
+          </li>
+          <li>juris.gogulis@sparkleheart.org</li>
+          <li>+37126890034</li>
+          <li>Biķernieku iela 24a - 5, LV-1006</li>
+        </div>
         <li class="soc-logo">
           <a href="#" target="_blank"> <img class="fb-logo" src="./assets/img/fb.png"></a>
           <a href="#" target="_blank"><img src="./assets/img/ig.png"></a>
