@@ -2606,62 +2606,6 @@ footer .row {
   }
 }
 
-.content-banka .img-left {
-  margin-left: -400px;
-}
-
-@media (max-width: 481px) {
-  .content-banka .img-left {
-    max-width: 118px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .content-banka .img-left {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .content-banka .img-left {
-    margin-left: -50px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .content-banka .img-left {
-    margin-left: -250px;
-  }
-}
-
-.content-banka .img-right {
-  margin-right: -150px;
-}
-
-@media (max-width: 481px) {
-  .content-banka .img-right {
-    max-width: 118px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .content-banka .img-right {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-  .content-banka .img-right {
-    margin-right: -50px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .content-banka .img-right {
-    margin-right: -100px;
-  }
-}
-
 .content-banka h1 {
   font-family: "Oswald";
   font-style: normal;
@@ -2733,7 +2677,7 @@ footer .row {
 }
 
 .orange-line {
-  margin-top: 150px;
+  margin-top: 550px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2741,11 +2685,31 @@ footer .row {
       -ms-flex-pack: center;
           justify-content: center;
   color: #ffffff;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-image: url("../../assets/img/Union1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@media (max-width: 481px) {
+@media (min-width: 1360px) and (max-width: 1660px) {
   .orange-line {
-    margin-top: 112px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 1660px) and (max-width: 1850px) {
+  .orange-line {
+    margin-top: 650px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .orange-line {
+    margin-top: 650px;
+    padding-bottom: 250px;
   }
 }
 
@@ -2766,6 +2730,7 @@ footer .row {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  padding-top: 100px;
 }
 
 @media (max-width: 545px) {
@@ -2819,6 +2784,7 @@ footer .row {
 @media (min-width: 1660px) {
   .orange-line .inline-org {
     margin-top: -558px;
+    padding-top: 150px;
   }
 }
 
@@ -2840,6 +2806,8 @@ footer .row {
   .orange-line .inline-org p {
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -4711,11 +4679,11 @@ body {
 #social-float {
   position: fixed;
   bottom: 10px;
-  margin: 0;
   z-index: 999;
+  padding-right: 30px;
   display: none;
   float: right;
-  width: 97%;
+  width: 96%;
   color: #2f4858c0;
   font-size: 40px;
   cursor: pointer;
