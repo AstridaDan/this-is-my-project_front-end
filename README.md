@@ -1,6 +1,6 @@
 # this-is-my-project_front-end
 
-Here is one Front-End page made with HTML, JavaScript, and SASS.
+It is my Front-End project with HTML, JavaScript, and SASS.
 
 
 To start a program you can simply clone all respiratory files and project result you will see when open index.html.
