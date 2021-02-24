@@ -607,19 +607,19 @@ form .form-check .form-check-label {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 767px) {
   .home-f {
     top: 6230px;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 485px) and (max-width: 600px) {
   .home-f {
     top: 5500px;
   }
 }
 
-@media (max-width: 485px) {
+@media (min-width: 350px) and (max-width: 485px) {
   .home-f {
     top: 4900px;
   }
@@ -635,37 +635,37 @@ form .form-check .form-check-label {
   margin-top: -1375px;
 }
 
-@media (min-width: 200px) {
+@media (min-width: 200px) and (max-width: 320px) {
   .idea-f {
     top: 3000px;
   }
 }
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width: 360px) {
   .idea-f {
     top: 3150px;
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 360px) and (max-width: 500px) {
   .idea-f {
     top: 3300px;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 551px) {
   .idea-f {
     top: 3500px;
   }
 }
 
-@media (min-width: 551px) {
+@media (min-width: 551px) and (max-width: 1000px) {
   .idea-f {
     top: 3000px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1000px) and (max-width: 1540px) {
   .idea-f {
     top: 3200px;
   }
@@ -687,31 +687,31 @@ form .form-check .form-check-label {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 767px) {
   .piesaki-f {
     margin-top: -301px;
   }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 575px) and (max-width: 600px) {
   .piesaki-f {
     margin-top: -2401px;
   }
 }
 
-@media (max-width: 575px) {
+@media (min-width: 486px) and (max-width: 575px) {
   .piesaki-f {
     margin-top: -1901px;
   }
 }
 
-@media (max-width: 486px) {
+@media (min-width: 450px) and (max-width: 486px) {
   .piesaki-f {
     margin-top: -1350px;
   }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 350px) and (max-width: 450px) {
   .piesaki-f {
     margin-top: -1893px;
   }
@@ -730,82 +730,6 @@ form .form-check .form-check-label {
 @media (max-width: 600px) {
   .uzn-f {
     top: 3350px;
-  }
-}
-
-.banka-f {
-  margin-top: 1340px;
-}
-
-@media (min-width: 1910px) {
-  .banka-f {
-    margin-top: 1740px;
-  }
-}
-
-@media (max-width: 1910px) {
-  .banka-f {
-    margin-top: 1740px;
-  }
-}
-
-@media (max-width: 1685px) {
-  .banka-f {
-    margin-top: 1750px;
-  }
-}
-
-@media (max-width: 1365px) {
-  .banka-f {
-    margin-top: 1600px;
-  }
-}
-
-@media (max-width: 1285px) {
-  .banka-f {
-    margin-top: 1500px;
-  }
-}
-
-@media (max-width: 800px) {
-  .banka-f {
-    margin-top: 1050px;
-  }
-}
-
-@media (max-width: 770px) {
-  .banka-f {
-    margin-top: 1070px;
-  }
-}
-
-@media (max-width: 650px) {
-  .banka-f {
-    top: 3070px;
-  }
-}
-
-@media (max-width: 575px) {
-  .banka-f {
-    top: 3750px;
-  }
-}
-
-@media (max-width: 530px) {
-  .banka-f {
-    top: 3550px;
-  }
-}
-
-@media (max-width: 480px) {
-  .banka-f {
-    top: 3100px;
-  }
-}
-
-@media (max-width: 360px) {
-  .banka-f {
-    top: 3170px;
   }
 }
 
@@ -927,7 +851,7 @@ form .form-check .form-check-label {
 }
 
 footer {
-  position: absolute;
+  margin-top: 150px;
   top: 3250px;
   left: 0;
   right: 0;
@@ -1366,12 +1290,6 @@ footer .row {
   footer .col-3 {
     margin-left: 5%;
     margin-right: 13%;
-  }
-}
-
-@media (max-width: 530px) {
-  .footer-vector {
-    margin-top: -30px;
   }
 }
 
@@ -2450,18 +2368,21 @@ footer .row {
 @media (max-width: 321px) {
   .video-banka .video-btn {
     margin-top: 65%;
+    margin-left: 39%;
   }
 }
 
 @media (min-width: 321px) and (max-width: 350px) {
   .video-banka .video-btn {
     margin-top: 60%;
+    margin-left: 40%;
   }
 }
 
 @media (min-width: 350px) and (max-width: 400px) {
   .video-banka .video-btn {
     margin-top: 53%;
+    margin-left: 42%;
   }
 }
 
@@ -4307,11 +4228,11 @@ body {
   position: relative;
   margin: 0px;
   padding: 0px;
-  padding-bottom: 20px;
   min-width: 100%;
   min-height: 100%;
   background: #e5e5e5;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .video img {
@@ -4671,7 +4592,6 @@ body {
   position: fixed;
   bottom: 10px;
   z-index: 999;
-  padding-right: 30px;
   display: none;
   float: right;
   width: 96%;

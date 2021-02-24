@@ -33,12 +33,15 @@
     width: 86px;
     @media (max-width: 321px) {
       margin-top: 65%;
+      margin-left: 39%;
     }
     @media (min-width: 321px) and (max-width: 350px) {
       margin-top: 60%;
+      margin-left: 40%;
     }
     @media (min-width: 350px) and (max-width: 400px) {
       margin-top: 53%;
+      margin-left: 42%;
     }
     @media (min-width: 400px) and (max-width: 430px) {
       margin-top: 47%;
