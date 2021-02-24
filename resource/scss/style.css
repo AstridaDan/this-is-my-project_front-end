@@ -2713,19 +2713,6 @@ footer .row {
   }
 }
 
-.orange-line .org-line,
-.orange-line .org-line2 {
-  width: 100%;
-}
-
-@media (max-width: 900px) {
-  .orange-line .org-line,
-  .orange-line .org-line2 {
-    height: 533px;
-    width: auto;
-  }
-}
-
 .orange-line .inline-org {
   -ms-flex-line-pack: center;
       align-content: center;
@@ -4312,15 +4299,20 @@ footer .row {
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   margin: 0px;
   padding: 0px;
   padding-bottom: 20px;
-  width: 100%;
+  min-width: 100%;
   min-height: 100%;
   background: #e5e5e5;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .video img {

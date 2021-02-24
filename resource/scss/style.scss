@@ -9,16 +9,19 @@
 @import "banka";
 @import "atbalsta";
 @import "stasti";
-
+html {
+  overflow-x: hidden;
+}
 body {
   position: relative;
   margin: 0px;
   padding: 0px;
   padding-bottom: 20px;
-  width: 100%;
+  min-width: 100%;
   min-height: 100%;
   background: #e5e5e5;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 //*** VIDEO ***//
 .video {
