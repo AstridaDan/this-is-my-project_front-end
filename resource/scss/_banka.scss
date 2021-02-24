@@ -1,0 +1,383 @@
+.intro-banka {
+  @include intro();
+  h1 {
+    @include header();
+    @media only screen and (max-device-width: 800px) {
+      font-size: 48px;
+    }
+  }
+}
+
+//VIDEO
+.video-banka {
+  margin-top: 340px;
+  width: 100%;
+  background-image: url("../../assets/img/video-banka.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (max-width: 530px) {
+    margin-top: 146px;
+  }
+  @media only screen and (min-device-width: 800px) {
+    height: 769px;
+  }
+  @media only screen and (max-device-width: 800px) {
+    margin-top: 224px;
+    height: 450px;
+    background-size: contain;
+  }
+  .video-btn {
+    margin-top: 20%;
+    margin-left: 47%;
+    width: 86px;
+    @media (max-width: 321px) {
+      margin-top: 65%;
+    }
+    @media (max-width: 350px) {
+      margin-top: 60%;
+    }
+    @media (max-width: 400px) {
+      margin-top: 53%;
+    }
+    @media (max-width: 430px) {
+      margin-top: 47%;
+    }
+    @media (max-width: 481px) {
+      margin-top: 43%;
+      margin-left: 45%;
+      width: 50px;
+    }
+    @media (max-width: 530px) {
+      margin-top: 37%;
+      margin-left: 43%;
+    }
+    @media (max-width: 605px) {
+      margin-top: 33%;
+      margin-left: 43%;
+    }
+    @media (max-width: 700px) {
+      margin-top: 28%;
+      margin-left: 45%;
+    }
+    @media (max-width: 800px) {
+      margin-top: 23%;
+      margin-left: 45%;
+    }
+    @media (max-width: 1000px) {
+      margin-top: 38%;
+    }
+    @media (max-width: 1150px) {
+      margin-top: 33%;
+    }
+    @media (max-width: 1350px) {
+      margin-top: 28%;
+    }
+    @media (max-width: 1480px) {
+      margin-top: 26%;
+    }
+    @media (min-width: 1730px) {
+      margin-left: 48%;
+    }
+  }
+}
+
+//CONTENT
+.content-banka {
+  margin-top: 493px;
+  text-align: center;
+  justify-content: center;
+  color: #2f4858;
+  @media (max-width: 650px) {
+    margin-top: 0;
+  }
+  @media (max-width: 768px) {
+    margin-top: 120px;
+  }
+  @media (max-width: 800px) {
+    margin-top: 150px;
+  }
+  @media (max-width: 1930px) {
+    margin-top: 193px;
+  }
+  .banka-wrapper {
+    padding-left: 150px;
+    @media (max-width: 992px) {
+      padding-left: 0;
+    }
+    @media (max-width: 1200px) {
+      padding-left: 50px;
+    }
+  }
+  .left {
+    text-align: left;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  .right {
+    text-align: right;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  .img-left {
+    margin-left: -400px;
+    @media (max-width: 481px) {
+      max-width: 118px;
+    }
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+    @media (max-width: 992px) {
+      margin-left: -50px;
+    }
+    @media (max-width: 1200px) {
+      margin-left: -250px;
+    }
+  }
+  .img-right {
+    margin-right: -150px;
+    @media (max-width: 481px) {
+      max-width: 118px;
+    }
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    @media (max-width: 992px) {
+      margin-right: -50px;
+    }
+    @media (max-width: 1200px) {
+      margin-right: -100px;
+    }
+  }
+  h1 {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    @media (max-width: 681px) {
+      font-size: 24px;
+    }
+  }
+  .secnd-h {
+    margin-top: 150px;
+    @media (max-width: 681px) {
+      margin-top: 120px;
+    }
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: "Montserrat";
+    margin-top: 50px;
+    padding: 9px;
+    @media (max-width: 681px) {
+      margin-top: 5px;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  p {
+    margin-top: 30px;
+    max-width: 500px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    @media (max-width: 681px) {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  .row {
+    margin-top: 82px;
+    @media (max-width: 768px) {
+      margin-top: 60px;
+    }
+  }
+}
+
+//ORANGE LINES
+.orange-line {
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  @media (max-width: 481px) {
+    margin-top: 112px;
+  }
+  .org-line,
+  .org-line2 {
+    width: 100%;
+    @media (max-width: 900px) {
+      height: 533px;
+      width: auto;
+    }
+  }
+  .inline-org {
+    align-content: center;
+    text-align: center;
+    @media (max-width: 545px) {
+      margin-top: -450px;
+    }
+    @media (max-width: 602px) {
+      margin-top: -500px;
+    }
+    @media (max-width: 778px) {
+      margin-top: -470px;
+    }
+    @media (max-width: 900px) {
+      margin-top: -420px;
+    }
+    @media (max-width: 950px) {
+      margin-top: -320px;
+    }
+    @media (max-width: 1050px) {
+      margin-top: -370px;
+    }
+    @media (max-width: 1150px) {
+      margin-top: -420px;
+    }
+    @media (max-width: 1660px) {
+      margin-top: -458px;
+    }
+    @media (min-width: 1660px) {
+      margin-top: -558px;
+    }
+    p {
+      @include center();
+      margin-top: 40px;
+      padding-left: 80px;
+      padding-right: 80px;
+      max-width: 818px;
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 24px;
+      @media (max-width: 450px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      @media (max-width: 545px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    .org-img {
+      @media (max-width: 778px) {
+        max-width: 368px;
+      }
+      @media (max-width: 950px) {
+        max-width: 250px;
+      }
+      @media (max-width: 1050px) {
+        max-width: 300px;
+      }
+    }
+  }
+}
+//WHITE LINES
+.between {
+  margin-top: 239px;
+  padding-left: 80px;
+  padding-right: 80px;
+  text-align: center;
+  color: #2f4858;
+  @media (max-width: 481px) {
+    margin-top: 120px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (max-width: 602px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: 1450px) {
+    margin-top: 239px;
+  }
+  @media (max-width: 1930px) {
+    margin-top: 339px;
+  }
+  h1 {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 30px;
+  }
+  p {
+    @include center();
+    max-width: 288px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    @media (max-width: 481px) {
+      max-width: 280px;
+      font-size: 18px;
+    }
+    @media (max-width: 778px) {
+      max-width: 255px;
+      font-size: 18px;
+    }
+  }
+  h2 {
+    margin-bottom: 50px;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 24px;
+    @media (max-width: 778px) {
+      font-size: 18px;
+    }
+  }
+  button {
+    @include buttons();
+    margin-bottom: 80px;
+  }
+  .banka-btn {
+    @media (max-width: 537px) {
+      margin-top: 0;
+    }
+    @media (max-width: 602px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 616px) {
+      margin-top: 0;
+    }
+    @media (max-width: 631px) {
+      margin-top: 20px;
+    }
+    @media (max-width: 634px) {
+      margin-top: 0;
+    }
+    @media (max-width: 778px) {
+      margin-top: 20px;
+    }
+  }
+  img {
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+  .between-img {
+    @media (max-width: 481px) {
+      max-width: 102px;
+    }
+    @media (max-width: 778px) {
+      margin-top: 60px;
+      max-width: 130px;
+    }
+  }
+  .img-atlasis {
+    margin-top: 90px;
+    @media (max-width: 481px) {
+      max-width: 125px;
+    }
+    @media (max-width: 778px) {
+      margin-top: 60px;
+    }
+  }
+}

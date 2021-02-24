@@ -1,5 +1,6 @@
 //*** HEADER ***//
 .nav {
+  top: 0;
   height: 92.51px;
   background: #ffffff;
 }
@@ -9,16 +10,16 @@
 }
 .logo {
   position: absolute;
-  max-width: 159px;
-  height: auto;
   left: 4.5%;
   z-index: 2;
+  max-width: 159px;
+  height: auto;
 }
 .nav-text {
-  display: block;
   margin-right: 32px;
   margin-left: 200px;
   padding-top: 51px;
+  display: block;
   text-align: right;
   transition: 0.1s;
   .lv {
@@ -26,48 +27,64 @@
   }
   a {
     margin-right: 25px;
-    line-height: 22px;
     color: #060606;
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
     &:hover {
-      transition: 0.5s;
+      color: #060606;
       text-decoration: underline;
       text-decoration-color: #ffa800;
       text-decoration-thickness: 3px;
-      color: #060606;
+      transition: 0.5s;
     }
+  }
+  .active {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #ffa800;
+    text-decoration-thickness: 3px;
   }
 }
 .nav-vector {
+  position: absolute;
   left: -0.07%;
   right: 0%;
-  padding-top: 7px;
-  width: 100%;
-  position: absolute;
   z-index: 1;
+  margin-top: 90px;
+  width: 100%;
   filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.103));
 }
 .icon {
-  color: black;
-  display: none;
   position: absolute;
-  font-size: 30px;
-  right: 3%;
-  top: 27%;
+  right: 5%;
+  top: 35px;
   z-index: 1;
+  display: none;
+  color: black;
+  font-size: 30px;
   &:hover {
     color: #ffa800;
     transition: 0.5s;
   }
 }
+.closebtn {
+  position: absolute;
+  top: -35px;
+}
 @media (max-width: 1220px) {
   .icon {
     display: block;
   }
+
+  .nav-text {
+    display: block;
+  }
   .nav-vector {
-    margin-top: 80px;
+    z-index: 99;
+    margin-top: 90px;
     width: 100%;
   }
   .logo {
@@ -76,49 +93,50 @@
     max-width: 140px;
   }
   .nav-text {
-    transition: 0.5s;
-    display: none;
-    position: absolute;
+    position: relative;
+    top: 0;
+    margin-left: 0;
     width: 100%;
-    top: 90px;
-    left: -200px;
-    padding-left: 19%;
-    padding-right: 39%;
-    background: #ffffff;
     text-align: center;
-    justify-content: center;
-    font-size: 13px;
-    color: #e6e6e6;
+  }
+  .nav-bar a {
+    margin-bottom: 30px;
+    padding: 10px;
+    display: block;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 999999;
+    height: 0;
+    width: 100vw;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    transition: 1s;
+  }
+  .closebtn {
+    position: absolute;
+    top: 35px;
+    right: 5%;
     z-index: 1;
-  }
-  .nav-text a {
-    margin-bottom: 60px;
-    margin-right: -200px;
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    font-style: none;
+    font-size: 30px;
+    &:hover {
+      color: #ffa800;
+      transition: 0.5s;
+    }
   }
 }
-@media (max-width: 550px) {
-  .nav-text {
-    padding-left: 5%;
-  }
-}
-@media (max-width: 415px) {
-  .nav-text a {
-    margin-left: -50px;
-  }
-  .lv {
-    padding-right: 70px;
-  }
-}
-@media (max-width: 380px) {
-  .nav-text a {
-    margin-left: -70px;
-  }
-  .lv {
-    padding-right: 90px;
+@media (max-width: 450px) {
+  .nav-bar a {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 18px;
   }
 }

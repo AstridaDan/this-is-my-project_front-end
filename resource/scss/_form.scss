@@ -1,35 +1,62 @@
-@mixin input-style {
-  background: rgba(196, 196, 196, 0.4);
-  border-radius: 6px;
-  border: none;
-  width: 100%;
-  margin-bottom: 15px;
-  padding-top: 13px;
-  padding-bottom: 10px;
-  padding-left: 12px;
-  padding-right: 14px;
-  //PLACEHOLDER
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  align-items: center;
-  letter-spacing: -0.015em;
-  color: #2f4858;
-}
-@mixin text {
-  font-style: normal;
-  font-weight: normal;
-  color: #2f4858;
-}
-
-//*** FORM ***//
-form {
+.first-form {
+  @include center();
   position: absolute;
   top: 2010px;
+  @media (min-width: 1450px) {
+    top: 2200px;
+  }
+  @media (max-width: 767px) {
+    top: 4710px;
+  }
+  @media (max-width: 600px) {
+    top: 4010px;
+  }
+  @media (max-width: 485px) {
+    top: 3480px;
+  }
+  @media (max-width: 350px) {
+    top: 2800px;
+  }
+}
+.second-form {
+  @include center();
+  position: absolute;
+  top: 1800px;
+  @media (max-width: 767px) {
+    top: 2150px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (max-width: 575px) {
+    top: 2600px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (max-width: 450px) {
+    top: 2100px;
+  }
+  @media (max-width: 350px) {
+    top: 2000px;
+  }
+  form {
+    h3 {
+      @media (max-width: 450px) {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.third-form {
+  @include center();
+  position: absolute;
+  top: 534px;
+}
+//*** FORM ***//
+form {
+  padding-right: 20px;
+  padding-left: 20px;
   max-width: 627px;
-  padding: 3px;
   text-align: center;
   h3 {
     margin-bottom: 55px;
@@ -38,23 +65,28 @@ form {
     font-size: 30px;
     line-height: 44px;
     color: #2f4858;
+    @media (max-width: 425px) {
+      font-size: 24px;
+    }
   }
   .form-group {
     input {
       @include input-style();
       height: 43px;
-
-      @media (max-width: 355px) {
-        font-size: 13px;
+      @media (max-width: 425px) {
+        font-size: 14px;
       }
+    }
+    select {
+      @include input-style();
     }
   }
   textarea {
     @include input-style();
     height: 232px;
     resize: none;
-    @media (max-width: 355px) {
-      font-size: 13px;
+    @media (max-width: 425px) {
+      font-size: 14px;
     }
   }
   .form-comm {
@@ -66,9 +98,11 @@ form {
     @media (max-width: 620px) {
       margin-left: 10px;
     }
+    @media (max-width: 425px) {
+      font-size: 12px;
+    }
   }
   .form-check {
-    position: absolute;
     margin-top: 25px;
     float: left;
     @media (max-width: 620px) {
@@ -101,12 +135,15 @@ form {
       transform: rotate(45deg);
     }
     .form-check-label {
-      margin-left: 21px;
       @include text();
+      margin-left: 21px;
+      font-family: "Montserrat";
       font-size: 14px;
       line-height: 17px;
-      font-family: "Montserrat";
       text-align: left;
+      @media (max-width: 425px) {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -114,18 +151,18 @@ form {
   margin-top: 50px;
   width: 181px;
   height: 62px;
-  background: #ffcb66;
-  border: none;
-  border-radius: 30px;
-  color: #ffffff;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   text-align: center;
+  color: #ffffff;
+  background: #ffa800;
+  border: none;
+  border-radius: 30px;
   cursor: pointer;
   &:hover {
-    background: #ffcc66b7;
+    background: #ffaa00a8;
     transition: 0.8s;
   }
 }

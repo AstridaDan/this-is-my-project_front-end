@@ -1,45 +1,101 @@
 
-var mybutton = document.getElementById("scroll");
-var footer = document.getElementById("footer");
+//CHANGING DISPLAY FOR MAP
+//Riga
+function showOtherRiga(){
+  document.getElementById('rigaEdiens').style.display = 'block'; 
+  document.getElementById('rigaFood').style.display = 'block';
+  document.getElementById('JelgavaFood').style.display = 'none';
+  document.getElementById('ogreEdiens').style.display = 'none';
+  document.getElementById('jelgavaEdiens').style.display = 'none';
+  document.getElementById('OgreFood').style.display = 'none';
+  document.getElementById('defaultMap').style.display = 'none';
+  document.getElementById('overlay').style.pointerEvents = 'auto';
+  document.getElementsByTagName('footer').style.display = 'none';
+};
 
-var st = window.pageYOffset || document.documentElement.scrollTop;
+//Jelgava
+function showOtherJelgava(){
+  document.getElementById('jelgavaEdiens').style.display = 'block';
+  document.getElementById('JelgavaFood').style.display = 'block';
+  document.getElementById('rigaEdiens').style.display = 'none';
+  document.getElementById('ogreEdiens').style.display = 'none';
+  document.getElementById('rigaFood').style.display = 'none';
+  document.getElementById('OgreFood').style.display = 'none';
+  document.getElementById('defaultMap').style.display = 'none';
+  document.getElementById('overlay').style.pointerEvents = 'auto'; 
+};
 
-window.onscroll = function() {scrollFunction()}; //Function start on page scroll
+//Ogre
+function showOtherOgre(){
+  document.getElementById('ogreEdiens').style.display = 'block';
+  document.getElementById('OgreFood').style.display = 'block';
+  document.getElementById('rigaEdiens').style.display = 'none';
+  document.getElementById('jelgavaEdiens').style.display = 'none';
+  document.getElementById('rigaFood').style.display = 'none';
+  document.getElementById('JelgavaFood').style.display = 'none';
+  document.getElementById('defaultMap').style.display = 'none';
+  document.getElementById('overlay').style.pointerEvents = 'auto';
+};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  
-    if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop)){
-      mybutton.style.position = 'fixed';
-    }
-    else{ //Button stop before footer
-      mybutton.style.position = 'absolute';
-      mybutton.style.top = '3220px'
-      mybutton.style.zIndex = '99';
-    }
-  }else {
-    mybutton.style.display = "none";
+function showHideOther(){
+  if (document.getElementById('drop_down').value == 'riga' && document.getElementById('drop_down2').value == 'ediens') {
+    showOtherRiga();   
   }
-  return scrollFunction();
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.body.scrollUp = 0;
-  document.documentElement.scrollTop = 0;
-}
+  else if (document.getElementById('drop_down').value == 'jelgava' && document.getElementById('drop_down2').value == 'ediens') {
+    showOtherJelgava();   
+  } 
+  else if (document.getElementById('drop_down').value == 'ogre' && document.getElementById('drop_down2').value == 'ediens') {
+    showOtherOgre();   
+  }
+};
 
+function openNav() { 
+  document.getElementById( 
+      "myNav").style.height = "100%"; 
+} ;
+
+function closeNav() { 
+  document.getElementById( 
+      "myNav").style.height = "0"; 
+} ;
+
+var socialFloat = document.querySelector('#social-float');
+var footer = document.querySelector('#footer');
+
+function checkOffset() {
 function getRectTop(el){
   var rect = el.getBoundingClientRect();
   return rect.top;
 }
 
-//NAVIGATION HAMBURGER
-function navFunction() {
-  var nav = document.getElementById("nav-mob");
-  if (nav.style.display === "block") {
-    nav.style.display = "none";
+if((getRectTop(socialFloat) + document.body.scrollTop) + socialFloat.offsetHeight >= (getRectTop(footer) + document.body.scrollTop) - 10)
+  socialFloat.style.position = 'absolute';
+if(document.body.scrollTop + window.innerHeight < (getRectTop(footer) + document.body.scrollTop))
+  socialFloat.style.position = 'fixed'; // restore when you scroll up
+}
+
+document.addEventListener("scroll", function(){
+checkOffset();
+});
+
+//SCROLL TO THE TOP
+
+//Get the button:
+ mybutton = document.getElementById("social-float");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+  
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    nav.style.display = "block";
+    mybutton.style.display = "none";
   }
+}
+  
+ // When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

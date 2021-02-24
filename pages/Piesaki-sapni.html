@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+	<title>Sparkle Heart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- NAVIGATION -->
+<nav class="nav">
+  <a href="javascript:void(0);" class="icon" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="../index.html">
+    <img class="logo" src="../assets/img/BlackLogo-3.jpg" alt="logo">
+  </a>
+  <div class="nav-bar" id="myNav">
+    <a href="../index.html">
+      <img class="logo" src="../assets/img/BlackLogo-3.jpg" alt="logo">
+    </a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 
+      <i class="fa fa-times"></i>
+    </a> 
+    <div class= "nav-text">
+      <a href="Ideja.html">Ideja</a>
+      <a href="#" class="active">Piesaki Sapni</a>
+		  <a href="Uznemejiem.html">Uzņēmējiem</a>
+		  <a href="Sapnu-banka.html">Sapņu banka</a>
+      <a href="Sapnus-atbalsta.html">Sapņus atbalsta</a>
+      <a href="99-stasti.html">99 Iedvesmas stāsti</a>
+      <a class="lv" href="#">LV</a>
+    </div>
+  </div>  
+</nav>
+
+<!--Sakuma teksts-->
+<div class="intro-piesaki">
+  <h1>PIESAKI SAPNI</h1>
+  <p>Tev ir iespēja pieteikt personīgo vai profesionālo sapni.</p>
+</div>
+<!-- Divas kolonnas -->
+<div class="dreams">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-12 dreams-columns">
+      <img class="img-dream" src="../assets/img/Group12.png" alt="Sparkle dog">
+      <h1>
+        PERSONĪGAIS SAPNIS
+      </h1>
+      <p>
+        Bērnības nepiepildītie sapņi... No sev piederoša svaigi spiestas sulas bāra uz 
+        Tērbatas ielas līdz iespējai satikties ar Džekiju Čanu.
+      </p>
+      <button class="dream-btn" onclick="window.location.href='#piesaki';">Piesaki sapni</button>
+    </div>
+    <div class="col-md-6 col-12 dreams-columns">
+      <img class="img-dream2" src="../assets/img/Group13.png" alt="Sparkle balloon">
+      <h1>
+        PROFESIONĀLAIS SAPNIS
+      </h1>
+      <p>
+        Sapnis vai ideja, kura ir balstīta uz reģiona, pasaules vai cilvēku attīstību 
+        4 virzienos - kultūra, izglītība, zinātne, ģimene jeb sociālā vide. Tā ir 
+        iespēja attīstīt ideju, kas uzlabotu ikdienas dzīves kvalitāti vai atrisinātu 
+        vietēja vai starptautiska līmeņa problēmu. Pastāsti, kāpēc Tev tas ir tik nozīmīgi?
+      </p>
+      <button onclick="window.location.href='#piesaki';">Piesaki sapni</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTO LINE -->
+<div class="container-fluid img-line2">
+  <div class="row justify-content-center no-gutters">
+    <img class="img vector first" src="../assets/img/ripped-6-7.svg" alt="vector">
+  
+    <div class="col-sm col-6 order-3 order-sm-1">
+      <div class="thumbnail nothing">
+        <img class="img-lauma" src="../assets/img/Lauma_4.jpg" alt="Lauma">
+      </div>
+    </div>
+
+    <div class="col-sm col-6 order-4 order-sm-2">
+      <div class="thumbnail nothing">
+        <img src="../assets/img/Brinuma_meita-3.jpg" alt="Brinuma meita" class="second-row">
+        <img src="../assets/img/Arta_2-1.jpg" alt="Arta" class="second-row">
+      </div>
+    </div>
+
+    <div class="col-sm col-5 order-1 order-sm-3">
+      <div class="thumbnail nothing">
+        <img src="../assets/img/Lauma_3.jpg" alt="Lauma" class="third-row">
+      </div>
+    </div>
+      
+    <div class="col-sm-4 col-7 order-2 order-sm-4">
+      <div class="thumbnail nothing">
+        <img src="../assets/img/Brinuma_meita-2.jpg" alt="Brinuma meita" class="fourth-row">
+      </div>
+    </div>
+      
+    <img class="img vector second" src="../assets/img/ripped-6-8.svg" alt="vector">
+  </div>
+</div>
+
+<!-- FORM -->
+<div class="second-form">
+  <div class="row justify-content-center">
+    <form id="piesaki-form">
+      <h3 id="piesaki">SAZINĀTIES AR MUMS</h3>
+      <div class="form-group">
+        <div class="row">  
+          <div class="col-sm col-12">
+            <input type="text" placeholder="Vārds, Uzvārds*" required>
+          </div>
+          <div class="col-sm col-12">
+            <input type="email" placeholder="E-pasts*" required>
+          </div>
+        </div>
+        <input placeholder="Telefons*" required>
+        <textarea placeholder="Jautājums, vai komentārs*" required></textarea>
+        <small class="form-comm" id="small-text">* obligāti aizpildāmie lauki</small>
+      </div>
+      <div class="form-check" id="submit-piesaki">
+        <input class="form-check-input" type="checkbox" value="" required>
+        <label class="form-check-label">
+          Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, 
+          kamēr tas būs nepieciešams.
+        </label>
+        <input type="submit" value="Sūtīt" class="submit-btn">
+      </div>
+     
+      <div class="form-thanks" id="thanks-text">
+        <h1>Paldies, ka sapņo!</h1>
+        <p>Ja Tavs sapnis tiks izvēlēts, mēs ar Tevi sazināsimies.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- SCROLL BUTTON -->
+<div class="social-float-parent">
+  <div id="social-float" onclick="topFunction()">
+    <a>
+      <i class="fa fa-arrow-circle-up"></i>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="piesaki-f" id="footer"> 
+  <img class="footer-vector-atb" src="../assets/img/footer.svg" alt="Footer vector">
+    <div class="row">
+      <div class="col-3">
+        <div class="first-col">
+          <img class="golden-logo" src="../assets/img/GoldenV2Logo-3.png" alt="Logo">
+          <p>
+            © SparkleHeart 2020. <br>
+            Visas tiesības aizsargātas.
+          </p>
+        </div>
+      </div>
+      <ul class="col-3">
+        <div class="second-col">
+              <li>
+                <a href="Ideja.html">Ideja</a>
+            </li>
+            <li>
+              <a href="Piesaki-sapni.html">Piesaki Sapni</a>
+            </li>
+            <li>
+              <a href="Uznemejiem.html">Uzņēmējiem</a>
+            </li>
+            <li>
+              <a href="Sapnu-banka.html">Sapņu banka</a>
+            </li>
+            <li>
+              <a href="Sapnus-atbalsta.html">Sapņus atbalsta</a>
+            </li>
+            <li>
+              <a href="99-stasti.html">Iedvesmas stāsti</a>
+          </li>
+        </div>
+      </ul>
+      <ul class="col-3">
+        <div class="third-col">
+              <li>
+            <h3>Biedrība SparkleHeart</h3>
+          </li>
+          <li>Reģistrācijas nr. 40008293119</li>
+          <li>Banka: SWEDBANK A/S</li>
+          <li>LV52HABA0551047652465</li>
+        </div>
+      </ul>
+      <ul class="col-3">
+        <div class="fourth-col">
+          <div class="fourth-txt">
+            <li>
+              <h3>Juris Gogulis</h3>
+            </li>
+            <li>juris.gogulis@sparkleheart.org</li>
+            <li>+37126890034</li>
+            <li>Biķernieku iela 24a - 5, LV-1006</li>
+          </div>
+          <li class="soc-logo">
+            <a href="#" target="_blank"> <img class="fb-logo" src="../assets/img/fb.png" alt="Facebook Logo"></a>
+          <a href="#" target="_blank"><img src="../assets/img/ig.png" alt="Instagram Logo"></a>
+          <li>
+            <a href="#" class="policy">
+              <p>Privātuma politika</p>
+            </a>
+          </li>
+        </div>
+        </ul>
+    </div>
+  </footer>
+  <script src="../assets/js/piesaki.js"></script>
+  <script src="../assets/js/theme.js"></script>
+</body>
+</html>

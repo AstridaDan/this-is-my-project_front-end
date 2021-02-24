@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+	<title>Sparkle Heart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="nav">
+  <a href="javascript:void(0);" class="icon" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="../index.html">
+    <img class="logo" src="../assets/img/BlackLogo-3.jpg" alt="logo">
+  </a>
+  <div class="nav-bar" id="myNav">
+    <a href="../index.html">
+      <img class="logo" src="../assets/img/BlackLogo-3.jpg" alt="logo">
+    </a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 
+      <i class="fa fa-times"></i>
+    </a> 
+    <div class= "nav-text">
+      <a href="Ideja.html">Ideja</a>
+      <a href="Piesaki-sapni.html">Piesaki Sapni</a>
+		  <a href="Uznemejiem.html">Uzņēmējiem</a>
+		  <a href="Sapnu-banka.html">Sapņu banka</a>
+      <a href="Sapnus-atbalsta.html">Sapņus atbalsta</a>
+      <a href="#"  class="active">99 Iedvesmas stāsti</a>
+      <a class="lv" href="#">LV</a>
+    </div>
+  </div>  
+</nav>
+<!--Sakuma teksts-->
+<div class="intro-stasti">
+  <h1 id="showIntro">99 IEDVESMAS STĀSTI</h1>
+  <p>Atklāj kādu no 99 aizraujošajiem stāstiem</p>
+</div>
+
+<!--Gold Frames-->
+<div id="images"></div>
+<div id="images-tablet"></div>
+  
+<!-- Numbers-->
+<div id="numbers"></div>
+<div id="numbers-tablet"></div>
+
+<div class="gallery">
+  <img src="../assets/img/gallery/1.jpg" class="gallery-img" alt="Image 1" data-bs-toggle="modal" data-bs-target="#modal1">
+  <img src="../assets/img/gallery/2.jpg" class="gallery-img" alt="Image 2" data-bs-toggle="modal" data-bs-target="#modal2">
+  <img src="../assets/img/gallery/3.jpg" class="gallery-img" alt="Image 3" data-bs-toggle="modal" data-bs-target="#modal3">
+  <img src="../assets/img/gallery/4.jpg" class="gallery-img" alt="Image 4" data-bs-toggle="modal" data-bs-target="#modal4">
+  <img src="../assets/img/gallery/5.jpg" class="gallery-img" alt="Image 5" data-bs-toggle="modal" data-bs-target="#modal5">
+  <img src="../assets/img/gallery/6.jpg" class="gallery-img" alt="Image 6" data-bs-toggle="modal" data-bs-target="#modal6">
+  <img src="../assets/img/gallery/7.jpg" class="gallery-img" alt="Image 7" data-bs-toggle="modal" data-bs-target="#modal7">
+  <img src="../assets/img/gallery/8.jpg" class="gallery-img" alt="Image 8" data-bs-toggle="modal" data-bs-target="#modal8">
+  <img src="../assets/img/gallery/9.jpg" class="gallery-img" alt="Image 9" data-bs-toggle="modal" data-bs-target="#modal9">
+  <img src="../assets/img/gallery/10.jpg" class="gallery-img" alt="Image 10" data-bs-toggle="modal" data-bs-target="#modal10">
+  <img src="../assets/img/gallery/11.jpg" class="gallery-img" alt="Image 11" data-bs-toggle="modal" data-bs-target="#modal11">
+  <img src="../assets/img/gallery/12.jpg" class="gallery-img" alt="Image 12" data-bs-toggle="modal" data-bs-target="#modal12">
+  <img src="../assets/img/gallery/13.jpg" class="gallery-img" alt="Image 13" data-bs-toggle="modal" data-bs-target="#modal13">
+  <img src="../assets/img/gallery/14.jpg" class="gallery-img" alt="Image 14" data-bs-toggle="modal" data-bs-target="#modal14">
+  <img src="../assets/img/gallery/15.jpg" class="gallery-img" alt="Image 15" data-bs-toggle="modal" data-bs-target="#modal15">
+  <img src="../assets/img/gallery/16.jpg" class="gallery-img" alt="Image 16" data-bs-toggle="modal" data-bs-target="#modal16">
+  <img src="../assets/img/gallery/17.jpg" class="gallery-img" alt="Image 17" data-bs-toggle="modal" data-bs-target="#modal17">
+</div>
+
+<!--NAMES-->
+<div id="names-gallery">
+  <h1 class="gallery-names">Alīna</h1>
+  <h1 class="gallery-names">Gunita</h1>
+  <h1 class="gallery-names">Egija</h1>
+  <h1 class="gallery-names">Asnāte</h1>
+  <h1 class="gallery-names">Arta</h1>
+  <h1 class="gallery-names">Anda</h1>
+  <h1 class="gallery-names">Ilze</h1>
+  <h1 class="gallery-names">Indra</h1>
+  <h1 class="gallery-names">Katrīna</h1>
+  <h1 class="gallery-names">Ketija</h1>
+  <h1 class="gallery-names">Lauma</h1>
+  <h1 class="gallery-names">Līga</h1>
+  <h1 class="gallery-names">Marta</h1>
+  <h1 class="gallery-names">Regīna</h1>
+  <h1 class="gallery-names">Zanda</h1>
+  <h1 class="gallery-names">Valentīna</h1>
+  <h1 class="gallery-names">Sibila</h1>
+  <h1 class="gallery-names feature">Jauns stāsts tiks pievienots drīzumā</h1>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal modal-fullscreen" id="modal1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class="modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class= "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_9OF99_Alina.mp4" type="video/mp4">
+        </video>
+        <h1>Alīna</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 2 -->
+<div class="modal modal-fullscreen" id="modal2">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_16OF99_Gunita.mp4" type="video/mp4">
+        </video>
+        <h1>Gunita</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 3 -->
+<div class="modal modal-fullscreen" id="modal3">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_17OF99_Egija.mp4" type="video/mp4">
+        </video>
+        <h1>Egija</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 4 -->
+<div class="modal modal-fullscreen" id="modal4">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_7OF99_Asnate.mp4" type="video/mp4">
+        </video>
+        <h1>Asnāte</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 5 -->
+<div class="modal modal-fullscreen" id="modal5">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_4OF99_Arta.mp4" type="video/mp4">
+        </video>
+        <h1>Arta</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 6 -->
+<div class="modal modal-fullscreen" id="modal6">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_6OF99_Anda.mp4" type="video/mp4">
+        </video>
+        <h1>Anda</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 7 -->
+<div class="modal modal-fullscreen" id="modal7">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_14OF99_Ilze.mp4" type="video/mp4">
+        </video>
+        <h1>Ilze</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 8 -->
+<div class="modal modal-fullscreen" id="modal8">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_8OF99_Indra.mp4" type="video/mp4">
+        </video>
+        <h1>Indra</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 9 -->
+<div class="modal modal-fullscreen" id="modal9">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_15OF99_Katrina.mp4" type="video/mp4">
+        </video>
+        <h1>Katrina</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 10 -->
+<div class="modal modal-fullscreen" id="modal10">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_5OF99_Ketija.mp4" type="video/mp4">
+        </video>
+        <h1>Ketija</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 11 -->
+<div class="modal modal-fullscreen" id="modal11">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/Lauma.mp4" type="video/mp4">
+        </video>
+        <h1>Lauma</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 12 -->
+<div class="modal modal-fullscreen" id="modal12">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_10OF99_Liga.mp4" type="video/mp4">
+        </video>
+        <h1>Līga</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 13 -->
+<div class="modal modal-fullscreen" id="modal13">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_12OF99_Marta.mp4" type="video/mp4">
+        </video>
+        <h1>Marta</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 14 -->
+<div class="modal modal-fullscreen" id="modal14">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_11OF99_Regina.mp4" type="video/mp4">
+        </video>
+        <h1>Regīna</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 15 -->
+<div class="modal modal-fullscreen" id="modal15">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_13OF99_Zanda.mp4" type="video/mp4">
+        </video>
+        <h1>Zanda</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 16 -->
+<div class="modal modal-fullscreen" id="modal16">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/BM_3OF99_Valentina.mp4" type="video/mp4">
+        </video>
+        <h1>Valentīna</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 17 -->
+<div class="modal modal-fullscreen" id="modal17">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"  ></button>
+      <div class = "modal-body">
+        <img class = "v-play" src="../assets/img/Group-2.png" alt="play button">
+        <video class = "video99">
+          <source src="https://sparkleheart.org/wp-content/uploads/2020/09/Sibilla.mp4" type="video/mp4">
+        </video>
+        <h1>Sibila</h1>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Beigu teksts-->
+<div class="bottom-stasti">
+  <button class="stasti-btn" id="more" onclick="showMoreLess()">Skatīt vairāk</button>
+  <a href="#showIntro">
+    <button class="stasti-btn" id="less" onclick="showMoreLess()">Skatīt mazāk</button>
+  </a>
+  <h1 class="bottomIntro">SPARKLE HEART KOMANDA</h1>
+  <p class="bottomIntro">Radošā komanda, kura strādā ar projektu 99 un starptautiskām Sparkle Heart īsfilmām.
+  </p>
+
+  <!--Trīs bilžu kolonas-->
+  <div class="bottom-img">
+    <div class="bottom-first">
+      <img src="../assets/img/gallery/juris.jpg" alt="Juris">
+      <h1>Juris Gogulis</h1>
+      <p>Idejas ģenerators un režisors</p>
+    </div>
+    <div class="bottom-first">
+      <img src="../assets/img/gallery/girts.jpg" alt="Juris">
+      <h1>Ģirts Ceriņš</h1>
+      <p>Operators un montāžas speciālists</p>
+    </div>
+    <div class="bottom-first">
+      <img src="../assets/img/gallery/janis.jpg" alt="Juris">
+      <h1>Jānis Zurģis</h1>
+      <p>Animācijas un grafiskā dizaina meistars</p>
+    </div>
+  </div>
+  <div class="overlay">
+    <img src="../assets/img/gallery/overlay-stasti.png" class="bottom-first" alt="Overlay">
+    <img src="../assets/img/gallery/overlay-stasti.png" class="bottom-first" alt="Overlay">
+    <img src="../assets/img/gallery/overlay-stasti.png" class="bottom-first" alt="Overlay">
+  </div>
+</div>
+
+<!-- SCROLL BUTTON -->
+<div class="social-float-parent">
+  <div id="social-float" onclick="topFunction()">
+    <a>
+      <i class="fa fa-arrow-circle-up"></i>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="stasti-f" id="footer"> 
+  <img class="footer-vector-atb" src="../assets/img/footer.svg" alt="Footer vector">
+    <div class="row">
+      <div class="col-3">
+        <div class="first-col">
+          <img class="golden-logo" src="../assets/img/GoldenV2Logo-3.png" alt="Logo">
+          <p>
+            © SparkleHeart 2020. <br>
+            Visas tiesības aizsargātas.
+          </p>
+        </div>
+      </div>
+      <ul class="col-3">
+        <div class="second-col">
+            <li>
+                <a href="Ideja.html">Ideja</a>
+            </li>
+            <li>
+              <a href="Piesaki-sapni.html">Piesaki Sapni</a>
+            </li>
+            <li>
+              <a href="Uznemejiem.html">Uzņēmējiem</a>
+            </li>
+            <li>
+              <a href="Sapnu-banka.html">Sapņu banka</a>
+            </li>
+            <li>
+              <a href="Sapnus-atbalsta.html">Sapņus atbalsta</a>
+            </li>
+            <li>
+              <a href="99-stasti.html">Iedvesmas stāsti</a>
+          </li>
+        </div>
+      </ul>
+      <ul class="col-3">
+        <div class="third-col">
+              <li>
+            <h3>Biedrība SparkleHeart</h3>
+          </li>
+          <li>Reģistrācijas nr. 40008293119</li>
+          <li>Banka: SWEDBANK A/S</li>
+          <li>LV52HABA0551047652465</li>
+        </div>
+      </ul>
+      <ul class="col-3">
+        <div class="fourth-col">
+          <div class="fourth-txt">
+            <li>
+              <h3>Juris Gogulis</h3>
+            </li>
+            <li>juris.gogulis@sparkleheart.org</li>
+            <li>+37126890034</li>
+            <li>Biķernieku iela 24a - 5, LV-1006</li>
+          </div>
+          <li class="soc-logo">
+            <a href="#" target="_blank"> <img class="fb-logo" src="../assets/img/fb.png" alt="Facebook Logo"></a>
+          <a href="#" target="_blank"><img src="../assets/img/ig.png" alt="Instagram Logo"></a>
+          </li>
+          <li>
+            <a href="#" class="policy">
+              <p>Privātuma politika</p>
+            </a>
+          </li>
+        </div>
+        </ul>
+    </div>
+  </footer>
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/stasti.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script>
+var playBtn = document.querySelectorAll('.v-play');
+var video = document.querySelectorAll('.video99');
+var close99 = document.querySelectorAll('.btn-close');
+
+for (let i = 0; i <= video.length; i++) {
+  close99[i].addEventListener('click', function() { //Stop video when close modal
+    video[i].pause();
+    video[i].currentTime = 0;                   //when open again, start from beggining
+  });
+
+  playBtn[i].addEventListener('click', function() {
+    video[i].play();
+  },false);
+
+  video[i].addEventListener('play', function() { //video playing
+    playBtn[i].disabled = true; 
+    playBtn[i].style.display = 'none'; 
+    video[i].setAttribute('controls','controls');
+  }, false);
+
+  video[i].addEventListener('pause', function() {  //video on pause
+    playBtn[i].disabled = false; 
+    video[i].removeAttribute('controls');
+    playBtn[i].style.display = 'block';
+  }, false);
+
+  video[i].addEventListener('ended', function() { //video ended
+    playBtn[i].disabled = false; 
+    playBtn[i].style.display = 'block';
+  }, false);
+}
+</script>
+</body>
+</html>

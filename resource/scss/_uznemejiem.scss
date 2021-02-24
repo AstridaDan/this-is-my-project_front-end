@@ -1,0 +1,18 @@
+.intro-uznemejiem {
+  @include intro();
+  h1 {
+    @include header();
+    @media (max-width: 425px) {
+      font-size: 36px;
+    }
+  }
+  p {
+    @include paragraph();
+    @include center();
+    padding-left: 20px;
+    padding-right: 20px;
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+}

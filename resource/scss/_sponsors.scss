@@ -5,6 +5,9 @@
   width: 100%;
   height: 550px;
   background: #ffcb66;
+  @media (max-width: 600px) {
+    top: 4800px;
+  }
   .sponsor-vector {
     width: 100%;
     height: auto;
@@ -15,40 +18,53 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
-    text-align: center;
     color: #2f4858;
+    text-align: center;
   }
   .sponsor-logo {
     position: absolute;
-    margin-top: 70px;
     left: 0;
     right: 0;
+    margin-top: 70px;
     img {
       width: 100%;
     }
   }
   .row {
-    width: 87%;
     margin-left: 11%;
+    width: 87%;
   }
   .logo-linearis {
     margin-top: -19px;
     max-width: 84.77px;
+    @media (max-width: 950px) {
+      padding-top: 10px;
+      max-width: 60px !important;
+    }
   }
 }
-@media (min-width: 1450px) {
+@media (max-width: 350px) {
   .sponsors {
-    top: 3000px;
-  }
-  .logo-linearis {
-    padding-top: 30px;
-    margin-left: 5%;
+    top: 3550px;
+    .col-md-3 {
+      margin-bottom: -10%;
+    }
+    .sponsor-vector {
+      margin-top: -3%;
+    }
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 485px) {
+  .sponsors {
+    top: 4250px;
+  }
   .logo-linearis {
-    padding-top: 10px;
-    max-width: 60px !important;
+    margin-left: 30%;
+  }
+}
+@media (max-width: 440px) {
+  .logo-linearis {
+    max-width: 40px !important;
   }
 }
 @media (max-width: 767px) {
@@ -71,29 +87,12 @@
     padding-top: 25px;
   }
 }
-@media (max-width: 600px) {
+@media (min-width: 1450px) {
   .sponsors {
-    top: 4800px;
-  }
-}
-@media (max-width: 485px) {
-  .sponsors {
-    top: 4250px;
+    top: 3000px;
   }
   .logo-linearis {
-    margin-left: 30%;
-  }
-}
-@media (max-width: 440px) {
-  .logo-linearis {
-    max-width: 40px !important;
-  }
-}
-@media (max-width: 350px) {
-  .sponsors {
-    top: 3550px;
-    .col-md-3 {
-      margin-bottom: -10%;
-    }
+    margin-left: 5%;
+    padding-top: 30px;
   }
 }

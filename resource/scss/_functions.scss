@@ -1,0 +1,96 @@
+//SELESCT
+@mixin dropdown-h {
+  margin-left: -50px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  vertical-align: middle;
+}
+@mixin dropdown-p {
+  margin-left: -50px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+}
+@mixin logo {
+  margin-top: -40px;
+}
+@mixin center {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+//PAGE INTRO
+@mixin intro {
+  position: absolute;
+  margin-top: 112px;
+  box-sizing: content-box;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  color: #2f4858;
+}
+@mixin header {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 71px;
+}
+@mixin paragraph {
+  margin-top: 60px;
+  max-width: 810px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+//BUTTONS
+@mixin buttons {
+  top: 1810px;
+  width: 209.8px;
+  height: 50px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 22px;
+  background: #ffa800;
+  border: none;
+  border-radius: 25.17px;
+  cursor: pointer;
+  &:hover {
+    background: #ffaa00a8;
+    border-bottom: 3px solid #ffa800;
+    transition: 0.8s;
+  }
+}
+//FORM
+@mixin input-style {
+  margin-bottom: 15px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 14px;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.4);
+  border-radius: 6px;
+  border: none;
+  //PLACEHOLDER
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #2f4858;
+}
+@mixin text {
+  font-style: normal;
+  font-weight: normal;
+  color: #2f4858;
+}
