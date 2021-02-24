@@ -4312,7 +4312,6 @@ body {
   min-height: 100%;
   background: #e5e5e5;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .video img {
