@@ -79,7 +79,7 @@ function showMoreLess(){
     lessBtn.style.display = 'none';
 
     if (x.matches){
-      footerMore[0].style.top = '3400px';
+      footerMore[0].style.marginTop = '3400px';
       stastiMore[0].style.marginTop = '1350px';
       if (x4.matches){
         stastiMore[0].style.marginTop = '1250px';
@@ -89,23 +89,23 @@ function showMoreLess(){
             stastiMore[0].style.marginTop = '1150px';
             if (x8.matches){
               stastiMore[0].style.marginTop = '2750px';
-              footerMore[0].style.top = '4800px';
+              footerMore[0].style.marginTop = '4800px';
               if (x9.matches){
                 stastiMore[0].style.marginTop = '2600px';
-                footerMore[0].style.top = '4650px';
+                footerMore[0].style.marginTop = '4650px';
                 if (x10.matches){
                   stastiMore[0].style.marginTop = '2480px';
                   if (x11.matches){
                     stastiMore[0].style.marginTop = '2280px';
-                    footerMore[0].style.top = '4350px';
+                    footerMore[0].style.marginTop = '4350px';
                     if (x13.matches){
                       stastiMore[0].style.marginTop = '2180px';
                       if (x14.matches){
                         stastiMore[0].style.marginTop = '2000px';
-                        footerMore[0].style.top = '4000px';
-                        if (x14.matches){
+                        footerMore[0].style.marginTop = '4000px';
+                        if (x15.matches){
                           stastiMore[0].style.marginTop = '1850px';
-                          footerMore[0].style.top = '3800px';
+                          footerMore[0].style.marginTop = '3800px';
                         }
                       }
                     }
@@ -129,49 +129,49 @@ function showMoreLess(){
     lessBtn.style.display = 'block'; 
     
     if (x.matches){
-      footerMore[0].style.top = '7100px';
+      footerMore[0].style.marginTop = '7100px';
       stastiMore[0].style.marginTop = '5100px';
       if (x2.matches){
-        stastiMore[0].style.marginTop = '4800px';
+        stastiMore[0].style.marginTop = '4890px';
         if (x3.matches){
-          stastiMore[0].style.marginTop = '4650px';
-          footerMore[0].style.top = '6700px';
+          stastiMore[0].style.marginTop = '4750pxpx';
+          footerMore[0].style.marginTop = '6700px';
           if (x4.matches){
-            stastiMore[0].style.marginTop = '4400px';
-            footerMore[0].style.top = '6400px';
+            stastiMore[0].style.marginTop = '4550px';
+            footerMore[0].style.marginTop = '6400px';
             if (x5.matches){
-              stastiMore[0].style.marginTop = '4050px';
-              footerMore[0].style.top = '6100px';
+              stastiMore[0].style.marginTop = '4150px';
+              footerMore[0].style.marginTop = '6100px';
               if (x6.matches){
-                stastiMore[0].style.marginTop = '4000px';
-                footerMore[0].style.top = '6000px';
+                stastiMore[0].style.marginTop = '4100px';
+                footerMore[0].style.marginTop = '6000px';
                 if (x7.matches){
-                  stastiMore[0].style.marginTop = '3800px';
-                  footerMore[0].style.top = '5800px';
+                  stastiMore[0].style.marginTop = '3900px';
+                  footerMore[0].style.marginTop = '5800px';
                   if (x8.matches){
-                    stastiMore[0].style.marginTop = '12400px';
-                    footerMore[0].style.top = '14400px';
+                    stastiMore[0].style.marginTop = '12500px';
+                    footerMore[0].style.marginTop = '14400px';
                     if (x9.matches){
-                      stastiMore[0].style.marginTop = '11650px';
-                      footerMore[0].style.top = '13650px';
+                      stastiMore[0].style.marginTop = '11750px';
+                      footerMore[0].style.marginTop = '13650px';
                       if (x10.matches){
                         stastiMore[0].style.marginTop = '10900px';
-                        footerMore[0].style.top = '13000px';
+                        footerMore[0].style.marginTop = '13000px';
                         if (x11.matches){
                           stastiMore[0].style.marginTop = '9990px';
-                          footerMore[0].style.top = '12050px';
+                          footerMore[0].style.marginTop = '12050px';
                           if (x12.matches){
                             stastiMore[0].style.marginTop = '9620px';
-                            footerMore[0].style.top = '11620px';
+                            footerMore[0].style.marginTop = '11620px';
                             if (x13.matches){
                               stastiMore[0].style.marginTop = '9400px';
-                              footerMore[0].style.top = '11400px';
+                              footerMore[0].style.marginTop = '11400px';
                               if (x14.matches){
                                 stastiMore[0].style.marginTop = '8650px';
-                                footerMore[0].style.top = '10650px';
+                                footerMore[0].style.marginTop = '10650px';
                                 if (x15.matches){
                                   stastiMore[0].style.marginTop = '7700px';
-                                  footerMore[0].style.top = '9700px';
+                                  footerMore[0].style.marginTop = '9700px';
                                 }
                               }
                             }

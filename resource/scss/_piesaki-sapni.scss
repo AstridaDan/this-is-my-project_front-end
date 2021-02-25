@@ -94,10 +94,10 @@
   position: relative;
   top: 1256px;
   padding: 0 !important;
-  @media (max-width: 450px) {
+  @media (max-width: 451px) {
     top: 1400px;
   }
-  @media (max-width: 767px) {
+  @media (min-width: 451px) and (max-width: 767px) {
     top: 1756px;
   }
   @media (min-width: 1400px) {

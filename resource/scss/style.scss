@@ -35,33 +35,27 @@ body {
   .video-btn {
     margin-top: 20%;
     margin-left: 47%;
-    width: 86px;
-  }
-}
-@media (min-width: 1600px) {
-  .video-btn {
-    top: 120%;
-  }
-}
-@media (max-width: 600px) {
-  .video-btn {
-    left: -5%;
-    top: 70%;
-    max-width: 76px;
-  }
-}
-@media (max-width: 480px) {
-  .video-btn {
-    left: -5%;
-    top: 60%;
-    max-width: 66px;
-  }
-}
-@media (max-width: 330px) {
-  .video-btn {
-    left: -5%;
-    top: 60%;
-    max-width: 56px;
+    max-width: 86px;
+
+    @media (min-width: 1600px) {
+      margin-top: 23%;
+    }
+
+    @media (min-width: 480px) and (max-width: 600px) {
+      left: -5%;
+      margin-top: 17%;
+      max-width: 76px;
+    }
+    @media (min-width: 330px) and (max-width: 480px) {
+      left: -5%;
+      margin-top: 10%;
+      max-width: 66px;
+    }
+    @media (max-width: 330px) {
+      left: -5%;
+      margin-top: 10%;
+      max-width: 56px;
+    }
   }
 }
 //*** INTRODUCTION TEXT ***//
